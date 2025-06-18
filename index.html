@@ -151,35 +151,70 @@
     </div>
   </section>
 
-  <section id="projects" class="mt-12 px-8">
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-4">🛠️ Dự án học tập</h3>
-    <ul class="list-disc ml-6 space-y-2">
-      <li><strong>Thực hành môn Ứng dụng Web</strong> (10–12/2024): 
-  Luyện tập HTML/CSS cơ bản, làm form liên hệ đơn giản, tạo chuyển trang bằng anchor, tìm hiểu về GitHub Pages.
-      </li>
-      <li><strong>Workshop Data Analyst:</strong> học Excel, SQL, thực hành Google Sheets</li>
-    </ul>
-  </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <section id="contact" class="mt-20 px-8 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+    <div class="w-24 h-1 mx-auto bg-cyan-400 rounded mb-12"></div>
 
-  <section id="skills" class="mt-12 px-8">
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-4">💻 Kỹ năng</h3>
-    <ul class="list-disc ml-6 space-y-2">
-      <li>Lập trình: C/C++, Java, JavaScript</li>
-      <li>Web: HTML, CSS, JavaScript, jQuery</li>
-      <li>CSDL: MySQL, SQLite</li>
-      <li>Công cụ: GitHub, VS Code, NetBeans, VMware, PyCharm</li>
-      <li>Kỹ năng mềm: Làm việc nhóm, tự học, giải quyết vấn đề</li>
-    </ul>
-  </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 
-  <section id="certs" class="mt-12 px-8">
-    <h3 class="text-2xl font-semibold text-cyan-400 mb-4">🏅 Chứng chỉ & Hoạt động</h3>
-    <ul class="list-disc ml-6 space-y-2">
-      <li>IELTS 6.0 (dự kiến 02/2026)</li>
-      <li>Tham gia hoạt động kỷ niệm 50 năm ngày Giải phóng Miền Nam</li>
-      <li>Tiếng Trung giao tiếp cơ bản</li>
-    </ul>
+      <!-- Contact Info -->
+      <div class="bg-slate-800/80 backdrop-blur-sm p-8 rounded-2xl text-left shadow-lg">
+        <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+        <div class="space-y-6 text-slate-300">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-phone text-cyan-400 text-xl"></i>
+            <div>
+              <p class="font-semibold">Call Me</p>
+              <p>+84 901998145</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <i class="fas fa-envelope text-cyan-400 text-xl"></i>
+            <div>
+              <p class="font-semibold">Email</p>
+              <p>mylien.tech@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <i class="fas fa-map-marker-alt text-cyan-400 text-xl"></i>
+            <div>
+              <p class="font-semibold">Address</p>
+              <p>Go Vap District, Ho Chi Minh City</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="bg-slate-800/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg space-y-6 text-left">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="name">Name</label>
+          <input class="w-full p-3 rounded-lg bg-slate-700/60 focus:outline-none focus:ring-2 focus:ring-cyan-400" type="text" id="name" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="email">Email</label>
+          <input class="w-full p-3 rounded-lg bg-slate-700/60 focus:outline-none focus:ring-2 focus:ring-cyan-400" type="email" id="email" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="message">Message</label>
+          <textarea class="w-full p-3 rounded-lg bg-slate-700/60 focus:outline-none focus:ring-2 focus:ring-cyan-400" rows="5" id="message" required></textarea>
+        </div>
+        <button class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+          Send Message
+        </button>
+      </form>
+
+    </div>
   </section>
+</body>
+
 </body>
 </html>
 
